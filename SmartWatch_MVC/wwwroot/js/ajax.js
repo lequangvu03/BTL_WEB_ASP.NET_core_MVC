@@ -82,6 +82,7 @@ $(document).on("click", "li.nav-item", function (e) {
         $.ajax({
             url: url,
             success: function (response) {
+
                 //$("div#main").html(response);
                 var content = $(response).find('div#main').html();
                 if (content !== undefined && content.length > 0) {

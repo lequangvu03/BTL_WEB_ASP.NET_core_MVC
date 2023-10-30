@@ -9,9 +9,8 @@
     <link rel="stylesheet" href="~/css/style.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/SmartWatch_MVC.styles.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/UserLayout/css/themify-icons/themify-icons.css">
-    <link rel="stylesheet" href="~/adminLayout/css/styles.min.css">
     <link rel="stylesheet" href="~/UserLayout/css/main.css">
-    
+
     @* Fontasesome *@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -55,18 +54,24 @@
     <title>@ViewData["Title"] - Smart Watch</title>
     <style>
 
-        .navbar-menu{
+        .navbar-menu {
             z-index: 10;
         }
-        .nav-item:not(.search):hover{
+
+        .nav-item:not(.search):hover {
             background-color: rgb(255, 223, 223, 0.4);
             cursor: pointer;
         }
 
 
-        .nav-item{
+        .nav-item {
             padding: 6px 16px;
             border-radius: 8px;
+        }
+
+        .carousel-item {
+            width: 100%;
+            height: 100%;
         }
 
     </style>
@@ -75,7 +80,7 @@
     <!-- Header -->
     @Html.Partial("UserComponents/_UserPageHeader")
 
-   <!-- Body -->
+    <!-- Body -->
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
@@ -84,28 +89,28 @@
 
     <!--  Footer -->
     @Html.Partial("UserComponents/_UserPageFooter")
-    
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
 
-   <script>
+    <script>
 
-          document.addEventListener('DOMContentLoaded', function () {
-                const menuToggle = document.getElementById('menu-toggle');
-                const navbarNav = document.querySelector('.navbar-menu');
-                menuToggle.addEventListener('click', function () {
-                    navbarNav.classList.toggle('show');
-                });
+        document.addEventListener('DOMContentLoaded', function () {
+            const menuToggle = document.getElementById('menu-toggle');
+            const navbarNav = document.querySelector('.navbar-menu');
+            menuToggle.addEventListener('click', function () {
+                navbarNav.classList.toggle('show');
+            });
 
-                $(".nav-item-toggle").click(function () {
-                    navbarNav.classList.remove("show")
-                })
+            $(".nav-item-toggle").click(function () {
+                navbarNav.classList.remove("show")
+            })
         });
 
 
-   </script>
-    
+    </script>
+
     @await RenderSectionAsync("Scripts", required: false)
     @await RenderSectionAsync("CartScripts", required: false)
     @await RenderSectionAsync("ProductDetailScripts", required: false)

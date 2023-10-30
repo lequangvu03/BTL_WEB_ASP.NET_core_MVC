@@ -1,6 +1,5 @@
-﻿
-@{
-	ViewData["Title"] = "Shopping Cart";
+﻿@{
+    ViewData["Title"] = "Shopping Cart";
     Layout = "~/Views/Shared/_UserLayout.cshtml";
 }
 
@@ -43,7 +42,7 @@
                                         <tr class="table_row">
                                             <td class="column-1">
                                                 <div class="how-itemcart1">
-                                                    <img src="@item.MaSpNavigation.MaSp" alt="@item.MaSpNavigation.TenSp">
+                                                    <img src="~/images/ProductImg/@item.MaSpNavigation.AnhDaiDien" alt="@item.MaSpNavigation.TenSp">
                                                 </div>
                                             </td>
                                             <td class="column-2">@item.MaSpNavigation.TenSp</td>
@@ -75,8 +74,6 @@
                                         </tr>
                                     }
                                 }
-
-
 
                             </table>
                         </div>
@@ -143,9 +140,11 @@
                             </div>
                         </div>
 
-                        <button class="flex-c-m stext-101 cl0 size-116 bg3 bor14 hov-btn3 p-lr-15 trans-04 pointer">
+
+                        <a asp-action="Pay" asp-controller="Cart" class="flex-c-m stext-101 cl0 size-116 bg3 bor14 hov-btn3 p-lr-15 trans-04 pointer">
                             Proceed to Checkout
-                        </button>
+                        </a>
+
                     </div>
                 </div>
             </div>
@@ -154,9 +153,6 @@
 
 </div>
 <!-- breadcrumb -->
-
-
-
 @section CartScripts{
     <script src="~/js/ajax.js"></script>
 }

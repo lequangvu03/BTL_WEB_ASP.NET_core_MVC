@@ -40,7 +40,6 @@ namespace SmartWatch_MVC.ViewModels {
 
         public NhanVienViewModel()
         {
-
         }
         public NhanVienViewModel(TNhanVien x)
         {
@@ -56,6 +55,7 @@ namespace SmartWatch_MVC.ViewModels {
             this.GioiTinh = x.GioiTinh;
             this.Password = "";
         }
+
         public NhanVienViewModel(TNhanVien x,TUser y)
         {
             this.MaNhanVien = x.MaNhanVien;
