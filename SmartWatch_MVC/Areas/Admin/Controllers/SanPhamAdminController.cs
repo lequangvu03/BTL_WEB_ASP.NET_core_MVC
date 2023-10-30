@@ -55,7 +55,7 @@ namespace SmartWatch_MVC.Areas.Admin.Controllers
         }
         [Route("ChiTietSanPham")]
         [HttpGet]
-        public IActionResult ChiTietSanPham(string maSanPham)
+        public IActionResult ChiTietSanPham(int maSanPham)
         {
             ViewBag.MaChatLieu = new SelectList(db.TChatLieus.ToList(), "MaChatLieu", "ChatLieu");
             ViewBag.MaHangSX = new SelectList(db.THangSxes.ToList(), "MaHangSx", "HangSx");

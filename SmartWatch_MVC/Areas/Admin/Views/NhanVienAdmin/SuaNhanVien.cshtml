@@ -64,11 +64,20 @@
                 <div class="row">
                     <div class="col-md-6">
                         <div class="form-group row">
-                            <label asp-for="SoDienThoai" class="col-sm-3 col-form-label">Số điện thoại 1</label>
+                            <label asp-for="SoDienThoai" class="col-sm-3 col-form-label">Số điện thoại </label>
                             <div class="col-sm-9">
                                 <input asp-for="SoDienThoai" type="text" class="form-control" />
                             </div>
                             <span asp-validation-for="SoDienThoai" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group row">
+                            <label asp-for="GhiChu" class="col-sm-3 col-form-label">Ghi chú</label>
+                            <div class="col-sm-9">
+                                <input asp-for="GhiChu" type="text" class="form-control" />
+                            </div>
+                            <span asp-validation-for="ChucVu" class="text-danger"></span>
                         </div>
                     </div>
 
@@ -106,15 +115,6 @@
                             </div>
                         </div>
 
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-group row">
-                            <label asp-for="GhiChu" class="col-sm-3 col-form-label">Ghi chú</label>
-                            <div class="col-sm-9">
-                                <input asp-for="GhiChu" type="text" class="form-control" />
-                            </div>
-                            <span asp-validation-for="ChucVu" class="text-danger"></span>
-                        </div>
                     </div>
                 </div>
                 <div class="form-group">

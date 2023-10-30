@@ -98,7 +98,7 @@ namespace SmartWatch_MVC.Areas.Admin.Controllers
         }
         [Route("ChiTietNhanVien")]
         [HttpGet]
-        public IActionResult ChiTietNhanVien(string maNhanVien)
+        public IActionResult ChiTietNhanVien(int maNhanVien)
         {
             var nhanvien = db.TNhanViens.Find(maNhanVien);
             var user = db.TUsers.Find(nhanvien.Username);
@@ -109,7 +109,7 @@ namespace SmartWatch_MVC.Areas.Admin.Controllers
 
         [Route("SuaNhanVien")]
         [HttpGet]
-        public IActionResult SuaNhanVien(string maNhanVien)
+        public IActionResult SuaNhanVien(int maNhanVien)
         {
             var nhanVien = db.TNhanViens.Find(maNhanVien);
             NhanVienViewModel x=new NhanVienViewModel(nhanVien);
@@ -143,6 +143,20 @@ namespace SmartWatch_MVC.Areas.Admin.Controllers
             }
             return View(nhanVien);
 
+        }
+        [Route("XoaNhanVien")]
+        [HttpGet]
+        public IActionResult XoaNhanVien(int manhanvien)
+        {
+            //thông báo cho người dùng biết có xóa được hay không 
+            TempData["Message"] = "";// để khi chuyển hướng vấn giữ được giá trị
+            //kiểm tra chi tiết sản phẩm có tồn tại mã sản phẩm này ko        
+            // ngược lại thì xóa ảnh và danh mục sản phẩm vì , ảnh là bên nhiều
+         
+            db.Remove(db.TNhanViens.Find(manhanvien));
+            db.SaveChanges();
+            TempData["Message"] = "Xóa nhân viên thành công";
+            return RedirectToAction("DanhMucNhanVien", "NhanVienAdmin");
         }
     }
 }
