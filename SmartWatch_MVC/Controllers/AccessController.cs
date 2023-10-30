@@ -46,8 +46,6 @@ namespace SmartWatch_MVC.Areas.Admin.Controllers
                         return RedirectToAction("Index", "HomeAdmin", new { Area = "Admin" });
                     }
                     else {
-
-                       
                         return RedirectToAction("Index", "User");
                     }
                 }

@@ -701,28 +701,188 @@
       "PackagePath": "staticwebassets\\images\\AdminLayout\\profile\\user-1.jpg"
     },
     {
-      "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\CategoryImg\\co.jfif",
-      "PackagePath": "staticwebassets\\images\\CategoryImg\\co.jfif"
+      "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\CategoryImg\\co.webp",
+      "PackagePath": "staticwebassets\\images\\CategoryImg\\co.webp"
     },
     {
-      "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\CategoryImg\\dientu.jfif",
-      "PackagePath": "staticwebassets\\images\\CategoryImg\\dientu.jfif"
+      "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\CategoryImg\\dientu.webp",
+      "PackagePath": "staticwebassets\\images\\CategoryImg\\dientu.webp"
     },
     {
-      "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\CategoryImg\\nam.jfif",
-      "PackagePath": "staticwebassets\\images\\CategoryImg\\nam.jfif"
+      "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\CategoryImg\\nam.webp",
+      "PackagePath": "staticwebassets\\images\\CategoryImg\\nam.webp"
     },
     {
-      "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\CategoryImg\\nữ.jfif",
-      "PackagePath": "staticwebassets\\images\\CategoryImg\\nữ.jfif"
+      "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\CategoryImg\\nu.jpg",
+      "PackagePath": "staticwebassets\\images\\CategoryImg\\nu.jpg"
     },
     {
-      "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\CategoryImg\\thongminh.jfif",
-      "PackagePath": "staticwebassets\\images\\CategoryImg\\thongminh.jfif"
+      "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\CategoryImg\\thongminh.webp",
+      "PackagePath": "staticwebassets\\images\\CategoryImg\\thongminh.webp"
     },
     {
       "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\EmployeeImg\\NV_8.jpg",
       "PackagePath": "staticwebassets\\images\\EmployeeImg\\NV_8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\ProductImg\\DetailProductImg\\SP_10_1.webp",
+      "PackagePath": "staticwebassets\\images\\ProductImg\\DetailProductImg\\SP_10_1.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\ProductImg\\DetailProductImg\\SP_10_2.webp",
+      "PackagePath": "staticwebassets\\images\\ProductImg\\DetailProductImg\\SP_10_2.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\ProductImg\\DetailProductImg\\SP_10_3.webp",
+      "PackagePath": "staticwebassets\\images\\ProductImg\\DetailProductImg\\SP_10_3.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\ProductImg\\DetailProductImg\\SP_10_4.webp",
+      "PackagePath": "staticwebassets\\images\\ProductImg\\DetailProductImg\\SP_10_4.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\ProductImg\\DetailProductImg\\SP_11_1.webp",
+      "PackagePath": "staticwebassets\\images\\ProductImg\\DetailProductImg\\SP_11_1.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\ProductImg\\DetailProductImg\\SP_11_2.webp",
+      "PackagePath": "staticwebassets\\images\\ProductImg\\DetailProductImg\\SP_11_2.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\ProductImg\\DetailProductImg\\SP_11_3.webp",
+      "PackagePath": "staticwebassets\\images\\ProductImg\\DetailProductImg\\SP_11_3.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\ProductImg\\DetailProductImg\\SP_11_4.webp",
+      "PackagePath": "staticwebassets\\images\\ProductImg\\DetailProductImg\\SP_11_4.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\ProductImg\\DetailProductImg\\SP_12_1.webp",
+      "PackagePath": "staticwebassets\\images\\ProductImg\\DetailProductImg\\SP_12_1.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\ProductImg\\DetailProductImg\\SP_12_2.webp",
+      "PackagePath": "staticwebassets\\images\\ProductImg\\DetailProductImg\\SP_12_2.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\ProductImg\\DetailProductImg\\SP_12_3.webp",
+      "PackagePath": "staticwebassets\\images\\ProductImg\\DetailProductImg\\SP_12_3.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\ProductImg\\DetailProductImg\\SP_12_4.webp",
+      "PackagePath": "staticwebassets\\images\\ProductImg\\DetailProductImg\\SP_12_4.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\ProductImg\\DetailProductImg\\SP_13_1.webp",
+      "PackagePath": "staticwebassets\\images\\ProductImg\\DetailProductImg\\SP_13_1.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\ProductImg\\DetailProductImg\\SP_13_2.webp",
+      "PackagePath": "staticwebassets\\images\\ProductImg\\DetailProductImg\\SP_13_2.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\ProductImg\\DetailProductImg\\SP_13_3.webp",
+      "PackagePath": "staticwebassets\\images\\ProductImg\\DetailProductImg\\SP_13_3.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\ProductImg\\DetailProductImg\\SP_13_4.webp",
+      "PackagePath": "staticwebassets\\images\\ProductImg\\DetailProductImg\\SP_13_4.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\ProductImg\\DetailProductImg\\SP_14_1.webp",
+      "PackagePath": "staticwebassets\\images\\ProductImg\\DetailProductImg\\SP_14_1.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\ProductImg\\DetailProductImg\\SP_14_2.webp",
+      "PackagePath": "staticwebassets\\images\\ProductImg\\DetailProductImg\\SP_14_2.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\ProductImg\\DetailProductImg\\SP_14_3.webp",
+      "PackagePath": "staticwebassets\\images\\ProductImg\\DetailProductImg\\SP_14_3.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\ProductImg\\DetailProductImg\\SP_14_4.webp",
+      "PackagePath": "staticwebassets\\images\\ProductImg\\DetailProductImg\\SP_14_4.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\ProductImg\\DetailProductImg\\SP_15_1.webp",
+      "PackagePath": "staticwebassets\\images\\ProductImg\\DetailProductImg\\SP_15_1.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\ProductImg\\DetailProductImg\\SP_15_2.webp",
+      "PackagePath": "staticwebassets\\images\\ProductImg\\DetailProductImg\\SP_15_2.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\ProductImg\\DetailProductImg\\SP_15_3.webp",
+      "PackagePath": "staticwebassets\\images\\ProductImg\\DetailProductImg\\SP_15_3.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\ProductImg\\DetailProductImg\\SP_15_4.webp",
+      "PackagePath": "staticwebassets\\images\\ProductImg\\DetailProductImg\\SP_15_4.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\ProductImg\\DetailProductImg\\SP_16_1.webp",
+      "PackagePath": "staticwebassets\\images\\ProductImg\\DetailProductImg\\SP_16_1.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\ProductImg\\DetailProductImg\\SP_16_2.webp",
+      "PackagePath": "staticwebassets\\images\\ProductImg\\DetailProductImg\\SP_16_2.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\ProductImg\\DetailProductImg\\SP_16_3.webp",
+      "PackagePath": "staticwebassets\\images\\ProductImg\\DetailProductImg\\SP_16_3.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\ProductImg\\DetailProductImg\\SP_16_4.webp",
+      "PackagePath": "staticwebassets\\images\\ProductImg\\DetailProductImg\\SP_16_4.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\ProductImg\\DetailProductImg\\SP_17_1.webp",
+      "PackagePath": "staticwebassets\\images\\ProductImg\\DetailProductImg\\SP_17_1.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\ProductImg\\DetailProductImg\\SP_17_2.webp",
+      "PackagePath": "staticwebassets\\images\\ProductImg\\DetailProductImg\\SP_17_2.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\ProductImg\\DetailProductImg\\SP_17_3.webp",
+      "PackagePath": "staticwebassets\\images\\ProductImg\\DetailProductImg\\SP_17_3.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\ProductImg\\DetailProductImg\\SP_17_4.webp",
+      "PackagePath": "staticwebassets\\images\\ProductImg\\DetailProductImg\\SP_17_4.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\ProductImg\\DetailProductImg\\SP_18_1.webp",
+      "PackagePath": "staticwebassets\\images\\ProductImg\\DetailProductImg\\SP_18_1.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\ProductImg\\DetailProductImg\\SP_18_2.webp",
+      "PackagePath": "staticwebassets\\images\\ProductImg\\DetailProductImg\\SP_18_2.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\ProductImg\\DetailProductImg\\SP_18_3.webp",
+      "PackagePath": "staticwebassets\\images\\ProductImg\\DetailProductImg\\SP_18_3.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\ProductImg\\DetailProductImg\\SP_18_4.webp",
+      "PackagePath": "staticwebassets\\images\\ProductImg\\DetailProductImg\\SP_18_4.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\ProductImg\\DetailProductImg\\SP_19_1.webp",
+      "PackagePath": "staticwebassets\\images\\ProductImg\\DetailProductImg\\SP_19_1.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\ProductImg\\DetailProductImg\\SP_19_2.webp",
+      "PackagePath": "staticwebassets\\images\\ProductImg\\DetailProductImg\\SP_19_2.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\ProductImg\\DetailProductImg\\SP_19_3.webp",
+      "PackagePath": "staticwebassets\\images\\ProductImg\\DetailProductImg\\SP_19_3.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\ProductImg\\DetailProductImg\\SP_19_4.webp",
+      "PackagePath": "staticwebassets\\images\\ProductImg\\DetailProductImg\\SP_19_4.webp"
     },
     {
       "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\ProductImg\\DetailProductImg\\SP_1_1.webp",
@@ -739,6 +899,166 @@
     {
       "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\ProductImg\\DetailProductImg\\SP_1_4.webp",
       "PackagePath": "staticwebassets\\images\\ProductImg\\DetailProductImg\\SP_1_4.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\ProductImg\\DetailProductImg\\SP_20_1.webp",
+      "PackagePath": "staticwebassets\\images\\ProductImg\\DetailProductImg\\SP_20_1.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\ProductImg\\DetailProductImg\\SP_20_2.webp",
+      "PackagePath": "staticwebassets\\images\\ProductImg\\DetailProductImg\\SP_20_2.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\ProductImg\\DetailProductImg\\SP_20_3.webp",
+      "PackagePath": "staticwebassets\\images\\ProductImg\\DetailProductImg\\SP_20_3.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\ProductImg\\DetailProductImg\\SP_20_4.webp",
+      "PackagePath": "staticwebassets\\images\\ProductImg\\DetailProductImg\\SP_20_4.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\ProductImg\\DetailProductImg\\SP_21_1.webp",
+      "PackagePath": "staticwebassets\\images\\ProductImg\\DetailProductImg\\SP_21_1.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\ProductImg\\DetailProductImg\\SP_21_2.webp",
+      "PackagePath": "staticwebassets\\images\\ProductImg\\DetailProductImg\\SP_21_2.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\ProductImg\\DetailProductImg\\SP_21_3.webp",
+      "PackagePath": "staticwebassets\\images\\ProductImg\\DetailProductImg\\SP_21_3.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\ProductImg\\DetailProductImg\\SP_21_4.webp",
+      "PackagePath": "staticwebassets\\images\\ProductImg\\DetailProductImg\\SP_21_4.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\ProductImg\\DetailProductImg\\SP_22_1.webp",
+      "PackagePath": "staticwebassets\\images\\ProductImg\\DetailProductImg\\SP_22_1.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\ProductImg\\DetailProductImg\\SP_22_2.webp",
+      "PackagePath": "staticwebassets\\images\\ProductImg\\DetailProductImg\\SP_22_2.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\ProductImg\\DetailProductImg\\SP_22_3.webp",
+      "PackagePath": "staticwebassets\\images\\ProductImg\\DetailProductImg\\SP_22_3.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\ProductImg\\DetailProductImg\\SP_22_4.webp",
+      "PackagePath": "staticwebassets\\images\\ProductImg\\DetailProductImg\\SP_22_4.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\ProductImg\\DetailProductImg\\SP_23_1.webp",
+      "PackagePath": "staticwebassets\\images\\ProductImg\\DetailProductImg\\SP_23_1.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\ProductImg\\DetailProductImg\\SP_23_2.webp",
+      "PackagePath": "staticwebassets\\images\\ProductImg\\DetailProductImg\\SP_23_2.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\ProductImg\\DetailProductImg\\SP_23_3.webp",
+      "PackagePath": "staticwebassets\\images\\ProductImg\\DetailProductImg\\SP_23_3.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\ProductImg\\DetailProductImg\\SP_23_4.webp",
+      "PackagePath": "staticwebassets\\images\\ProductImg\\DetailProductImg\\SP_23_4.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\ProductImg\\DetailProductImg\\SP_24_1.webp",
+      "PackagePath": "staticwebassets\\images\\ProductImg\\DetailProductImg\\SP_24_1.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\ProductImg\\DetailProductImg\\SP_24_2.webp",
+      "PackagePath": "staticwebassets\\images\\ProductImg\\DetailProductImg\\SP_24_2.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\ProductImg\\DetailProductImg\\SP_24_3.jfif",
+      "PackagePath": "staticwebassets\\images\\ProductImg\\DetailProductImg\\SP_24_3.jfif"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\ProductImg\\DetailProductImg\\SP_24_4.jfif",
+      "PackagePath": "staticwebassets\\images\\ProductImg\\DetailProductImg\\SP_24_4.jfif"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\ProductImg\\DetailProductImg\\SP_25_1.webp",
+      "PackagePath": "staticwebassets\\images\\ProductImg\\DetailProductImg\\SP_25_1.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\ProductImg\\DetailProductImg\\SP_25_2.webp",
+      "PackagePath": "staticwebassets\\images\\ProductImg\\DetailProductImg\\SP_25_2.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\ProductImg\\DetailProductImg\\SP_25_3.webp",
+      "PackagePath": "staticwebassets\\images\\ProductImg\\DetailProductImg\\SP_25_3.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\ProductImg\\DetailProductImg\\SP_25_4.webp",
+      "PackagePath": "staticwebassets\\images\\ProductImg\\DetailProductImg\\SP_25_4.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\ProductImg\\DetailProductImg\\SP_26_1.webp",
+      "PackagePath": "staticwebassets\\images\\ProductImg\\DetailProductImg\\SP_26_1.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\ProductImg\\DetailProductImg\\SP_26_2.webp",
+      "PackagePath": "staticwebassets\\images\\ProductImg\\DetailProductImg\\SP_26_2.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\ProductImg\\DetailProductImg\\SP_26_3.webp",
+      "PackagePath": "staticwebassets\\images\\ProductImg\\DetailProductImg\\SP_26_3.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\ProductImg\\DetailProductImg\\SP_26_4.webp",
+      "PackagePath": "staticwebassets\\images\\ProductImg\\DetailProductImg\\SP_26_4.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\ProductImg\\DetailProductImg\\SP_27_1.webp",
+      "PackagePath": "staticwebassets\\images\\ProductImg\\DetailProductImg\\SP_27_1.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\ProductImg\\DetailProductImg\\SP_27_2.webp",
+      "PackagePath": "staticwebassets\\images\\ProductImg\\DetailProductImg\\SP_27_2.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\ProductImg\\DetailProductImg\\SP_27_3.webp",
+      "PackagePath": "staticwebassets\\images\\ProductImg\\DetailProductImg\\SP_27_3.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\ProductImg\\DetailProductImg\\SP_27_4.webp",
+      "PackagePath": "staticwebassets\\images\\ProductImg\\DetailProductImg\\SP_27_4.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\ProductImg\\DetailProductImg\\SP_28_1.webp",
+      "PackagePath": "staticwebassets\\images\\ProductImg\\DetailProductImg\\SP_28_1.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\ProductImg\\DetailProductImg\\SP_28_2.webp",
+      "PackagePath": "staticwebassets\\images\\ProductImg\\DetailProductImg\\SP_28_2.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\ProductImg\\DetailProductImg\\SP_28_3.webp",
+      "PackagePath": "staticwebassets\\images\\ProductImg\\DetailProductImg\\SP_28_3.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\ProductImg\\DetailProductImg\\SP_28_4.webp",
+      "PackagePath": "staticwebassets\\images\\ProductImg\\DetailProductImg\\SP_28_4.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\ProductImg\\DetailProductImg\\SP_29_1.webp",
+      "PackagePath": "staticwebassets\\images\\ProductImg\\DetailProductImg\\SP_29_1.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\ProductImg\\DetailProductImg\\SP_29_2.webp",
+      "PackagePath": "staticwebassets\\images\\ProductImg\\DetailProductImg\\SP_29_2.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\ProductImg\\DetailProductImg\\SP_29_3.webp",
+      "PackagePath": "staticwebassets\\images\\ProductImg\\DetailProductImg\\SP_29_3.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\ProductImg\\DetailProductImg\\SP_29_4.webp",
+      "PackagePath": "staticwebassets\\images\\ProductImg\\DetailProductImg\\SP_29_4.webp"
     },
     {
       "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\ProductImg\\DetailProductImg\\SP_2_1.webp",
@@ -853,12 +1173,108 @@
       "PackagePath": "staticwebassets\\images\\ProductImg\\DetailProductImg\\SP_8_4.webp"
     },
     {
+      "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\ProductImg\\DetailProductImg\\SP_9_1.webp",
+      "PackagePath": "staticwebassets\\images\\ProductImg\\DetailProductImg\\SP_9_1.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\ProductImg\\DetailProductImg\\SP_9_2.webp",
+      "PackagePath": "staticwebassets\\images\\ProductImg\\DetailProductImg\\SP_9_2.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\ProductImg\\DetailProductImg\\SP_9_3.webp",
+      "PackagePath": "staticwebassets\\images\\ProductImg\\DetailProductImg\\SP_9_3.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\ProductImg\\DetailProductImg\\SP_9_4.webp",
+      "PackagePath": "staticwebassets\\images\\ProductImg\\DetailProductImg\\SP_9_4.webp"
+    },
+    {
       "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\ProductImg\\SP_1.webp",
       "PackagePath": "staticwebassets\\images\\ProductImg\\SP_1.webp"
     },
     {
+      "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\ProductImg\\SP_10.webp",
+      "PackagePath": "staticwebassets\\images\\ProductImg\\SP_10.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\ProductImg\\SP_11.webp",
+      "PackagePath": "staticwebassets\\images\\ProductImg\\SP_11.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\ProductImg\\SP_12.webp",
+      "PackagePath": "staticwebassets\\images\\ProductImg\\SP_12.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\ProductImg\\SP_13.webp",
+      "PackagePath": "staticwebassets\\images\\ProductImg\\SP_13.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\ProductImg\\SP_14.webp",
+      "PackagePath": "staticwebassets\\images\\ProductImg\\SP_14.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\ProductImg\\SP_15.webp",
+      "PackagePath": "staticwebassets\\images\\ProductImg\\SP_15.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\ProductImg\\SP_16.webp",
+      "PackagePath": "staticwebassets\\images\\ProductImg\\SP_16.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\ProductImg\\SP_17.webp",
+      "PackagePath": "staticwebassets\\images\\ProductImg\\SP_17.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\ProductImg\\SP_18.webp",
+      "PackagePath": "staticwebassets\\images\\ProductImg\\SP_18.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\ProductImg\\SP_19.webp",
+      "PackagePath": "staticwebassets\\images\\ProductImg\\SP_19.webp"
+    },
+    {
       "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\ProductImg\\SP_2.webp",
       "PackagePath": "staticwebassets\\images\\ProductImg\\SP_2.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\ProductImg\\SP_20.webp",
+      "PackagePath": "staticwebassets\\images\\ProductImg\\SP_20.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\ProductImg\\SP_21.webp",
+      "PackagePath": "staticwebassets\\images\\ProductImg\\SP_21.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\ProductImg\\SP_22.webp",
+      "PackagePath": "staticwebassets\\images\\ProductImg\\SP_22.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\ProductImg\\SP_23.webp",
+      "PackagePath": "staticwebassets\\images\\ProductImg\\SP_23.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\ProductImg\\SP_24.webp",
+      "PackagePath": "staticwebassets\\images\\ProductImg\\SP_24.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\ProductImg\\SP_25.webp",
+      "PackagePath": "staticwebassets\\images\\ProductImg\\SP_25.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\ProductImg\\SP_26.webp",
+      "PackagePath": "staticwebassets\\images\\ProductImg\\SP_26.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\ProductImg\\SP_27.webp",
+      "PackagePath": "staticwebassets\\images\\ProductImg\\SP_27.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\ProductImg\\SP_28.webp",
+      "PackagePath": "staticwebassets\\images\\ProductImg\\SP_28.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\ProductImg\\SP_29.webp",
+      "PackagePath": "staticwebassets\\images\\ProductImg\\SP_29.webp"
     },
     {
       "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\ProductImg\\SP_3.webp",
@@ -883,6 +1299,10 @@
     {
       "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\ProductImg\\SP_8.webp",
       "PackagePath": "staticwebassets\\images\\ProductImg\\SP_8.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\ProductImg\\SP_9.webp",
+      "PackagePath": "staticwebassets\\images\\ProductImg\\SP_9.webp"
     },
     {
       "Id": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\SP_1.jpg",
