@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - SmartWatch_MVC</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/style.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/SmartWatch_MVC.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/UserLayout/css/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="~/adminLayout/css/styles.min.css">
+    <link rel="stylesheet" href="~/UserLayout/css/main.css">
+    
+    @* Fontasesome *@
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--===============================================================================================-->
+    <link rel="icon" type="image/png" href="~/web/assets/images/icons/favicon.png" />
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/web/assets/vendor/bootstrap/css/bootstrap.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/web/assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css"
+          href="~/web/assets/fonts/iconic/css/material-design-iconic-font.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/web/assets/fonts/linearicons-v1.0.0/icon-font.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/web/assets/vendor/animate/animate.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/web/assets/vendor/css-hamburgers/hamburgers.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/web/assets/vendor/animsition/css/animsition.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/web/assets/vendor/select2/select2.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/web/assets/vendor/daterangepicker/daterangepicker.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/web/assets/vendor/slick/slick.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/web/assets/vendor/MagnificPopup/magnific-popup.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/web/assets/vendor/perfect-scrollbar/perfect-scrollbar.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/web/assets/css/util.css">
+    <link rel="stylesheet" type="text/css" href="~/web/assets/css/main.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/jquery-toast-plugin/1.3.2/jquery.toast.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <title>@ViewData["Title"] - Smart Watch</title>
+    <style>
+
+        .navbar-menu{
+            z-index: 10;
+        }
+        .nav-item:not(.search):hover{
+            background-color: rgb(255, 223, 223, 0.4);
+            cursor: pointer;
+        }
+
+
+        .nav-item{
+            padding: 6px 16px;
+            border-radius: 8px;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    @Html.Partial("UserComponents/_UserPageHeader")
+
+   <!-- Body -->
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <!--  Footer -->
+    @Html.Partial("UserComponents/_UserPageFooter")
+    
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+   <script>
+
+          document.addEventListener('DOMContentLoaded', function () {
+                const menuToggle = document.getElementById('menu-toggle');
+                const navbarNav = document.querySelector('.navbar-menu');
+                menuToggle.addEventListener('click', function () {
+                    navbarNav.classList.toggle('show');
+                });
+
+                $(".nav-item-toggle").click(function () {
+                    navbarNav.classList.remove("show")
+                })
+        });
+
+
+   </script>
+    
+    @await RenderSectionAsync("Scripts", required: false)
+    @await RenderSectionAsync("CartScripts", required: false)
+    @await RenderSectionAsync("ProductDetailScripts", required: false)
+</body>
+</html>

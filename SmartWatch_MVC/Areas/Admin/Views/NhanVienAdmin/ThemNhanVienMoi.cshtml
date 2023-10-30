@@ -1,0 +1,134 @@
+﻿@{
+    ViewData["Title"] = "ThemNhanVienMoi";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@using SmartWatch_MVC.Models;
+@model SmartWatch_MVC.ViewModels.NhanVienViewModel
+<h2> Thêm nhân viên mới </h2>
+
+<hr />
+<div class="col-12">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title"> Welcom</h4>
+            <form method="post" enctype="multipart/form-data" class="form-sample">
+                <p class="card-description"> Nhập thông tin nhân viên</p>
+                <div class="row">
+                    @* <div class="col-md-6">
+                        <div class="form-group row">
+                            <label asp-for="MaNhanVien" class="col-sm-3 col-form-label">Mã nhân viên</label>
+                            <div class="col-sm-9">
+                                <input asp-for="MaNhanVien" type="text" class="form-control" />
+                            </div>
+                            <span asp-validation-for="MaNhanVien" class="text-danger"></span>
+                        </div>
+                    </div> *@
+                    <div class="col-md-6">
+                        <div class="form-group row">
+                            <label asp-for="TenNhanVien" class="col-sm-3 col-form-label">Tên nhân viên</label>
+                            <div class="col-sm-9">
+                                <input asp-for="TenNhanVien" type="text" class="form-control" />
+                            </div>
+                            <span asp-validation-for="TenNhanVien" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group row">
+                            <label asp-for="GioiTinh" class="col-sm-3 col-form-label">Giới tính</label>
+                            <div class="col-sm-9">
+                                <select asp-for="GioiTinh" class="form-control">
+                                    <option>Nam</option>
+                                    <option>Nữ</option>
+                                </select>
+                            </div>
+                            <span asp-validation-for="GioiTinh" class="text-danger"></span>
+
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group row">
+                            <label asp-for="NgaySinh" class="col-sm-3 col-form-label">Ngày sinh</label>
+                            <div class="col-sm-9">
+                                <input asp-for="NgaySinh" class="form-control" placeholder="dd/mm/yyyy" />
+                            </div>
+                            <span asp-validation-for="NgaySinh" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group row">
+                            <label asp-for="SoDienThoai" class="col-sm-3 col-form-label">Số điện thoại </label>
+                            <div class="col-sm-9">
+                                <input asp-for="SoDienThoai" type="text" class="form-control" />
+                            </div>
+                            <span asp-validation-for="SoDienThoai" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group row">
+                            <label asp-for="DiaChi" class="col-sm-3 col-form-label">Địa chỉ</label>
+                            <div class="col-sm-9">
+                                <input asp-for="DiaChi" type="text" class="form-control" />
+                            </div>
+                            <span asp-validation-for="DiaChi" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group row">
+                            <label asp-for="ChucVu" class="col-sm-3 col-form-label">Chức vụ</label>
+                            <div class="col-sm-9">
+                                <input asp-for="ChucVu" type="text" class="form-control" />
+                            </div>
+                            <span asp-validation-for="ChucVu" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group row">
+                            <label asp-for="ChucVu" class="col-sm-3 col-form-label">Tài khoản</label>
+                            <div class="col-sm-9">
+                                <input asp-for="Username" type="text" class="form-control" />
+                            </div>
+                            <span asp-validation-for="Username" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group row">
+                            <label class="col-sm-3 col-form-label">Ảnh nhân viên</label>
+                            <div class="col-sm-9">
+                                <input asp-for="img" class="form-control file-upload-info" placeholder="Upload Image">
+                            </div>
+                            </div>
+                        </div>
+                    <div class="col-md-6">
+                        <div class="form-group row">
+                            <label asp-for="Password" class="col-sm-3 col-form-label">Mật khẩu</label>
+                            <div class="col-sm-9">
+                                <input asp-for="Password" type="text" class="form-control" />
+                            </div>
+                            <span asp-validation-for="Password" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                </div>
+                <button type="submit" class="btn btn-gradient-primary me-2">Submit</button>
+                <button class="btn btn-light">Cancel</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+<div>
+    <a asp-action="DanhMucNhanVien">Back to List</a>
+</div>
+

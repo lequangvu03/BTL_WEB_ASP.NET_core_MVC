@@ -1,0 +1,80 @@
+﻿
+@{
+    ViewData["Title"] = "DoanhThu";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h1>DoanhThu</h1>
+<hr />
+
+
+
+<div class="col-lg-10 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Bar chart</h4>
+            <canvas id="myChart"></canvas> @* một thẻ html 5 được dùng đẻ vẽ đồ họa bằng js *@
+        </div>
+    </div>
+</div>
+
+<script src="../../LayoutAdmin/assets/vendors/chart.js/Chart.min.js"></script>
+<!-- End plugin js for this page -->
+<!-- inject:js -->
+
+<script src="../wwwroot/LayoutAdmin/assets/js/off-canvas.js"></script>
+<script src="../wwwroot/LayoutAdmin/assets/js/jquery.cookie.js"></script>
+<script src="../wwwroot/LayoutAdmin/assets/js/chart.js"></script>
+<script src="../wwwroot/lib/jquery/dist/jquery.js"></script>
+
+
+
+<script>
+
+    //sự kiện được kích hoạt khi toàn bộ trang được load
+    $(document).ready(function () {
+        //thực hiện một ajax request
+        $.ajax({
+            url: 'admin/baocaoadmin/GetRevenueDataByMonth',  // địa chỉ url mà request sẽ được gửi đến
+            type: 'GET',   // loại request trong trường hợp này là get request
+            dataType: 'json', // kiểu dữ liệu mà server trả về là json
+            success: function (data) {  // hàm này sẽ được gọi khi request thành công. tham số dât chứa dữ liệu được trả về từ server
+                // Sử dụng dữ liệu để cập nhật biểu đồ
+                updateChart(data.Labels, data.Data);   // data được trả về có hai thuộc tính labels và data , cho vào func updateChart
+            },
+            error: function (error) {
+                console.log(error);
+            }
+        });
+    });
+
+
+
+    //khai báo hàm updateChart với labels là nhãn , data là mảng chứ dữ liệu tương ứng
+    function updateChart(labels, data) {
+        const ctx = document.getElementById('myChart'); // lấy ra đối tường trong js với id là myChart -> chính là
+        new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                datasets: [{
+                    label: 'Doanh thu theo tuần', // nhãn cho cả 1 tập dữ liêu
+                    data: [12, 19, 3, 5, 2, 3], // giá trị của từng cột
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true // trục y bắt đàu từ 0
+                    }
+                }
+            }
+        });
+    }
+
+
+</script>
+
+
+

@@ -1,0 +1,175 @@
+﻿@*@model IEnumerable<SmartWatch_MVC.Models.TDanhMucSp>*@
+
+@{
+    ViewData["Title"] = "DanhMucSanPham";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@using SmartWatch_MVC.Models;
+@using X.PagedList.Mvc.Core;
+@model X.PagedList.IPagedList<TDanhMucSp>
+
+<h2>Danh mục các sản  phẩm </h2>
+<hr />
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="d-flex justify-content-between">
+            <div>
+                <p>
+                    <button type="button" class="btn btn-gradient-primary btn-fw"><a style="text-decoration: none;" asp-action="ThemSanPhamMoi">Create New</a></button>
+                </p>
+            </div>
+            <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
+                <div class="input-group" style="text-align:center">
+                    <input class="form-control" type="text" id="txtSearch" placeholder="Search for..." aria-label="Search for..." aria-describedby="btnNavbarSearch" />
+                    <button class="btn btn-primary" id="btnNavbarSearch" type="button"><i class="mdi mdi-yeast"></i></button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@*gán temdata vào danh mục sản phẩm*@
+<p>@TempData["Message"]</p>
+<div class="stretch-card">
+    <div class="card">
+        <div class="card-body" id="Content">
+            <table class="table table-bordered">
+                <thead class="table-warning">
+                    <tr>
+                        <th>
+                            @*@Html.DisplayNameFor(model => model.MaSp)*@
+                            <p>Mã sản phẩm</p>
+                        </th>
+                        <th>
+                            <p>Tên sản phẩm</p>
+                        </th>
+                        <th>
+                            <p>Thời gian bảo hành</p>
+                        </th>
+                        <th>
+                            <p>Giá nhỏ nhất</p>
+                        </th>
+                        <th>
+                            <p>Giá lớn nhất</p>
+                        </th>
+                    
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @{
+                        int i = 0;
+                        string @color = "table-success";
+                    }
+                    @foreach (var item in Model)
+                    {
+                        i = i + 1;
+                        color = "table-success";
+
+                        if (i % 2 == 0)
+                        {
+                            color = "table-info";
+                        }
+                        <tr class="@color">
+                            <td>
+                                @Html.DisplayFor(modelItem => item.MaSp)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.TenSp)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.ThoiGianBaoHanh)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.GiaNhoNhat)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.GiaLonNhat)
+                            </td>
+                          
+                            <!--<td>
+                            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+                            </td>-->
+                            <td>
+                                <div class="col-md-3">
+                                    <a style="text-decoration: none;" asp-action="SuaSanPham" asp-route-maSanPham="@item.MaSp">
+                                        <i class="mdi mdi-rename-box"></i>
+                                    </a>
+                                    <a style="text-decoration: none;" asp-action="ChiTietSanPham" asp-route-maSanPham="@item.MaSp">
+                                        <i class="mdi mdi-receipt"></i>
+                                    </a>
+                                    <a style="text-decoration: none;" asp-action="XoaSanPham" asp-route-maSanPham="@item.MaSp">
+                                        <i class="mdi mdi-delete-forever"></i>
+                                    </a>
+
+                                </div>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+        <div>
+           
+        </div>
+    </div>
+ 
+</div>
+<div >
+    <ul class="pagination">
+        @for (int j = 1; j <= Model.PageCount; j++)
+        {
+            <li class="page-item @(j == Model.PageNumber ? "active" : "")"><a class="page-link" data-page="@j">@j</a></li>
+        }
+    </ul>
+</div>
+
+
+@section Scripts{
+    <script>
+
+        $(document).on("click", ".pagination a", function (e) {
+            console.log("runing")
+            e.preventDefault();
+
+            var page = $(this).data("page");
+            $(".pagination li").removeClass("active");
+            $(this).parent().addClass("active");
+            $.ajax({
+                url: "/admin/sanphamadmin/DanhMucSanPhamFs",
+                data: { page: page },
+                type: "GET",
+                success: function (response) {
+                    $("div#content").html(response);
+                }
+            });
+        });
+
+        $("#btnNavbarSearch").click(function () {
+            var page = 1; // Reset to the first page when searching
+            var search = $("#txtSearch").val();
+
+            $.ajax({
+                url: "/admin/sanphamadmin/DanhMucSanPhamFs",
+                data: { page: page, search: search },
+                type: "GET",
+                success: function (response) {
+                    $("div#content").html(response);
+                }
+            });
+        });
+    </script>
+}
+@*<div>
+    @Html.PagedListPager(Model, page => Url.Action("DanhMucSanPham", new{page=page}), new
+    X.PagedList.Mvc.Core.PagedListRenderOptions(){
+    LiElementClasses = new List<String> {"page-item"},
+    PageClasses =new List<String> {"page-link"}
+    }
+    )
+</div> *@
+

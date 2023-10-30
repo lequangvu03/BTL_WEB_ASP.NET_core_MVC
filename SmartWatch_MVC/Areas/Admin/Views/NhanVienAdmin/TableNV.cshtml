@@ -1,0 +1,85 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@using X.PagedList.Mvc.Core;
+@model X.PagedList.IPagedList<SmartWatch_MVC.Models.TNhanVien>
+<table class="table table-bordered">
+    <thead class="table-warning">
+        <tr>
+            <th>
+                @*@Html.DisplayNameFor(model => model.MaSp)*@
+                <p>Mã nhân viên</p>
+            </th>
+            <th>
+                <p>Tên nhân viên</p>
+            </th>
+            <th>
+                <p>Ngày sinh</p>
+            </th>
+            <th>
+                <p>SĐT</p>
+            </th>
+            <th>
+                <p>Địa chỉ</p>
+            </th>
+            <th>
+                <p>Chức vụ </p>
+            </th>
+
+        </tr>
+    </thead>
+    <tbody>
+        @{
+            int i = 0;
+            string @color = "table-success";
+        }
+        @foreach (var item in Model)
+        {
+            i = i + 1;
+            color = "table-success";
+
+            if (i % 2 == 0)
+            {
+                color = "table-info";
+            }
+            <tr class="@color">
+                <td>
+                    @Html.DisplayFor(modelItem => item.MaNhanVien)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TenNhanVien)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NgaySinh)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SoDienThoai)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DiaChi)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ChucVu)
+                </td>
+
+                <td>
+                    <div class="col-md-3">
+                        <a style="text-decoration: none;" asp-action="SuaNhanVien" asp-route-MaNhanVien="@item.MaNhanVien">
+                            <i class="mdi mdi-rename-box"></i>
+                        </a>
+                        <a style="text-decoration: none;" asp-action="ChiTietNhanVien" asp-route-MaNhanVien="@item.MaNhanVien">
+                            <i class="mdi mdi-receipt"></i>
+                        </a>
+                        <a style="text-decoration: none;" asp-action="XoaNhanVien" asp-route-MaNhanVien="@item.MaNhanVien">
+                            <i class="mdi mdi-delete-forever"></i>
+                        </a>
+
+                    </div>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

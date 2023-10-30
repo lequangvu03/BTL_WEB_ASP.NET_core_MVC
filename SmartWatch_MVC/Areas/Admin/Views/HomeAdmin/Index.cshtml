@@ -1,0 +1,279 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="page-header">
+    <h3 class="page-title">
+        <span class="page-title-icon bg-gradient-primary text-white me-2">
+            <i class="mdi mdi-home"></i>
+        </span> Dashboard
+    </h3>
+</div>
+
+<div class="row">
+    <div class="col-md-4 stretch-card grid-margin">
+        <div class="card bg-gradient-danger card-img-holder text-white">
+            <div class="card-body">
+                @* <img src="../LayoutAdmin/~/LayoutAdmin/assets/images/dashboard/circle.svg" class="card-img-absolute" alt="circle-image" />
+                *@
+                <h4 class="font-weight-normal mb-3">
+                    Monthly Sales <i class="mdi mdi-chart-line mdi-24px float-right"></i>
+                </h4>
+                <h2 class="mb-5"> $ @ViewBag.TotalMonthly</h2>
+                <h6 class="card-text">@ViewData["TrangThai"] @ViewData["GiaTri"]% </h6>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 stretch-card grid-margin">
+        <div class="card bg-gradient-info card-img-holder text-white">
+            <div class="card-body">
+
+                <h4 class="font-weight-normal mb-3">
+                    Monthly Orders <i class="mdi mdi-bookmark-outline mdi-24px float-right"></i>
+                </h4>
+                <h2 class="mb-5">@ViewBag.SoLuongHD</h2>
+                <h6 class="card-text">@ViewData["TrangThaiHD"] @ViewData["ChechLechHD"]%</h6>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 stretch-card grid-margin">
+        <div class="card bg-gradient-success card-img-holder text-white">
+            <div class="card-body">
+                <h4 class="font-weight-normal mb-3">
+                     Monthly Customer <i class="mdi mdi-diamond mdi-24px float-right"></i>
+                </h4>
+                <h2 class="mb-5"> 10</h2>
+                <h6 class="card-text">
+                    Increared by 90%
+                </h6>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-8 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Thống kê doanh thu</h4>
+                <canvas id="barChart" style="height:230px"></canvas>
+                <script>
+                    var salesData = [];
+                    // Kiểm tra additionalData có dữ liệu không
+                    @if (ViewBag.MonthlySalesData != null)
+                    {
+                        foreach (var item in ViewBag.MonthlySalesData)
+                        {
+                            <text>
+                                salesData.push({ Month: '@item.Month', Total: @item.Total });
+                            </text>
+                        }
+                    }
+                                                                // Lấy thẻ canvas và vẽ biểu đồ
+                    var ctx = document.getElementById('barChart').getContext('2d');
+                    var myChart = new Chart(ctx, {
+                        type: 'bar',
+                        data: {
+                            labels: salesData.map(item => item.Month),
+                            datasets: [{
+                                label: 'Doanh số hàng tháng',
+                                data: salesData.map(item => item.Total),
+                                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                                borderColor: 'rgba(75, 192, 192, 1)',
+                                borderWidth: 1
+                            }]
+                        }
+                    });
+                </script>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Doughnut chart</h4>
+                <canvas id="doughnutChart" style="height:250px"></canvas>
+                <script>
+                    var salesData = [
+                        { Month: "Tháng 1", Total: 200 },
+                        { Month: "Tháng 2", Total: 150 },
+                        { Month: "Tháng 3", Total: 110 },
+                        { Month: "Tháng 4", Total: 50 },
+                    ];
+                    var backgroundColors = [
+                        'rgba(177, 148, 250, 1)',
+                        'rgba(132, 217, 210, 1)',
+                        'rgba(254, 112, 150, 1)',
+                        'rgba(254, 112, 200, 12)',
+                        // Thêm các màu khác nếu cần
+                    ];
+                     // Lấy thẻ canvas và vẽ biểu đồ
+                    var ctx = document.getElementById('doughnutChart').getContext('2d');
+                    var myChart = new Chart(ctx, {
+                        type: 'doughnut',
+                        data: {
+                            labels: salesData.map(item => item.Month),
+                            datasets: [{
+                                label: 'Doanh số hàng tháng',
+                                data: salesData.map(item => item.Total),
+                                backgroundColor: backgroundColors,
+                                borderColor: 'rgba(75, 192, 192, 1)',
+                                borderWidth: 1
+                            }]
+                        }
+                    });
+                </script>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12 grid-margin">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Recent Tickets</h4>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th> Assignee </th>
+                                <th> Subject </th>
+                                <th> Status </th>
+                                <th> Last Update </th>
+                                <th> Tracking ID </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <img src="~/LayoutAdmin/assets/images/faces/face1.jpg" class="me-2" alt="image"> David Grey
+                                </td>
+                                <td> Fund is not recieved </td>
+                                <td>
+                                    <label class="badge badge-gradient-success">DONE</label>
+                                </td>
+                                <td> Dec 5, 2017 </td>
+                                <td> WD-12345 </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="~/LayoutAdmin/assets/images/faces/face2.jpg" class="me-2" alt="image"> Stella Johnson
+                                </td>
+                                <td> High loading time </td>
+                                <td>
+                                    <label class="badge badge-gradient-warning">PROGRESS</label>
+                                </td>
+                                <td> Dec 12, 2017 </td>
+                                <td> WD-12346 </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="~/LayoutAdmin/assets/images/faces/face6.jpg" class="me-2" alt="image"> Marina Michel
+                                </td>
+                                <td> Website down for one week </td>
+                                <td>
+                                    <label class="badge badge-gradient-info">ON HOLD</label>
+                                </td>
+                                <td> Dec 16, 2017 </td>
+                                <td> WD-12347 </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="~/LayoutAdmin/assets/images/faces/face4.jpg" class="me-2" alt="image"> John Doe
+                                </td>
+                                <td> Loosing control on server </td>
+                                <td>
+                                    <label class="badge badge-gradient-danger">REJECTED</label>
+                                </td>
+                                <td> Dec 3, 2017 </td>
+                                <td> WD-12348 </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Recent Updates</h4>
+                <div class="d-flex">
+                    <div class="d-flex align-items-center me-4 text-muted font-weight-light">
+                        <i class="mdi mdi-account-outline icon-sm me-2"></i>
+                        <span>jack Menqu</span>
+                    </div>
+                    <div class="d-flex align-items-center text-muted font-weight-light">
+                        <i class="mdi mdi-clock icon-sm me-2"></i>
+                        <span>October 3rd, 2018</span>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-6 pe-1">
+                        <img src="~/LayoutAdmin/assets/images/dashboard/img_5.jpg" class="mb-2 mw-100 w-100 rounded" alt="image">
+                        <img src="~/LayoutAdmin/assets/images/dashboard/img_7.jpg" class="mw-100 w-100 rounded" alt="image">
+                    </div>
+                    <div class="col-6 ps-1">
+                        <img src="~/LayoutAdmin/assets/images/dashboard/img_6.jpg" class="mb-2 mw-100 w-100 rounded" alt="image">
+                        <img src="~/LayoutAdmin/assets/images/dashboard/img_8.jpg" class="mw-100 w-100 rounded" alt="image">
+                        <h2> </h2>
+                        <img src="~/LayoutAdmin/assets/images/dashboard/img_1.jpg" class="mw-100 w-100 rounded" alt="image">
+
+                    </div>
+                </div>
+                <div class="d-flex mt-5 align-items-top">
+                    <img src="~/LayoutAdmin/assets/images/faces/face10.jpg" class="img-sm rounded-circle me-3" alt="image">
+                    <div class="mb-0 flex-grow">
+                        <h5 class="me-2 mb-2">Smart Watch - Authentication Module.</h5>
+                        <p class="mb-0 font-weight-light">It is a long established fact that a reader will be distracted by the readable content of a page.</p>
+                    </div>
+                    <div class="ms-auto">
+                        <i class="mdi mdi-heart-outline text-muted"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-12 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Thống kê khách hàng</h4>
+                <canvas id="lineChart" style="height:230px"></canvas>
+                <script>
+                    var salesData = [];
+                    // Kiểm tra additionalData có dữ liệu không
+                    @if (ViewBag.CustomersMonthlyData != null)
+                    {
+                        foreach (var item in ViewBag.CustomersMonthlyData)
+                        {
+                            <text>
+                                salesData.push({ Month: '@item.Month', Total: @item.CustomerCount });
+                            </text>
+                        }
+                    }
+                                                                                    // Lấy thẻ canvas và vẽ biểu đồ
+                    var ctx = document.getElementById('lineChart').getContext('2d');
+                    var myChart = new Chart(ctx, {
+                        type: 'line',
+                        data: {
+                            labels: salesData.map(item => item.Month),
+                            datasets: [{
+                                label: 'Khách hàng theo tháng',
+                                data: salesData.map(item => item.Total),
+                                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                                borderColor: 'rgba(75, 192, 192, 1)',
+                                borderWidth: 1
+                            }]
+                        }
+                    });
+                </script>
+            </div>
+        </div>
+    </div>
+   
+</div>

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33801.468
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartWatch_MVC", "SmartWatch_MVC\SmartWatch_MVC.csproj", "{A330E799-A417-40AB-A6E0-2DF4F6AFACCA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A330E799-A417-40AB-A6E0-2DF4F6AFACCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A330E799-A417-40AB-A6E0-2DF4F6AFACCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A330E799-A417-40AB-A6E0-2DF4F6AFACCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A330E799-A417-40AB-A6E0-2DF4F6AFACCA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {03BE3BE0-3776-4D7B-B823-5DEFF9D3EC8F}
+	EndGlobalSection
+EndGlobal

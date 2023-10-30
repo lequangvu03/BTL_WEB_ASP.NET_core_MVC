@@ -1,0 +1,132 @@
+﻿@using X.PagedList.Mvc.Core
+@using X.PagedList.Mvc
+@model SmartWatch_MVC.ViewModels.UserProductDetailViewModel
+
+@{
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+    var relevantProducts = ViewBag.RelevantProducts as X.PagedList.IPagedList<TDanhMucSp>;
+}
+
+<main class="cd__main">
+    <!-- Start DEMO HTML (Use the following code into your project)-->
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-md-5">
+                <div class="main-img">
+                    <img class="img-fluid" id="current-image" style="aspect-ratio: 1/1;" src="~/images/ProductImg/@Model.product.AnhDaiDien" alt="ProductS">
+                    <div class="d-flex align-items-center justify-content-center gap-2 my-3 previews">
+                       @foreach(var item in Model.productImages){
+                            <div style="aspect-ratio: 1/1;">
+                                <img class="w-100 thumbnail" src="~/images//ProductImg/DetailProductImg/@item.TenFileAnh" alt="Sale">
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-7">
+                <div class="main-description px-2">
+                    <div class="category text-bold">
+                        Category: @ViewBag.Category
+                    </div>
+                    <div class="product-title text-bold my-3">
+                        @Model.product.TenSp
+                    </div>
+                    
+
+                    <div class="price-area my-4">
+                        <p class="old-price mb-1"><del>@Model.product.GiaLonNhat</del> 
+                            <span class="old-price-discount text-danger">(-$@(Math.Ceiling(Convert.ToDecimal((Model.product.GiaLonNhat-Model.product.GiaNhoNhat)/Model.product.GiaLonNhat * 100)))%)</span>
+                        </p>
+                        <p class="new-price text-bold mb-1">@Model.product.GiaNhoNhat</p>
+                        <p class="text-secondary mb-1">(Additional tax may apply on checkout)</p>
+
+                    </div>
+
+
+                    <div class="buttons d-flex my-5">
+                        <div class="block">
+                            <a class="shadow btn custom-btn" asp-action="AddToCart" asp-controller="Cart" asp-route-id="@Model.product.MaSp">Add to Cart</a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="product-details my-4 text-nowrap" style="white-space: nowrap;">
+                    <p class="details-title text-color mb-1">Product Details</p>
+                    <p class="description">@Model.product.GioiThieuSp</p>
+                </div>
+
+                <div class="row questions bg-light p-3">
+                    <div class="col-md-1 icon">
+                        <i class="fa-brands fa-rocketchat questions-icon"></i>
+                    </div>
+                    <div class="col-md-11 text">
+                        Have a question about our products at E-Store? Feel free to contact our representatives via live chat or email.
+                    </div>
+                </div>
+
+                <div class="delivery my-4">
+                    <p class="font-weight-bold mb-0"><span><i class="fa-solid fa-truck"></i></span> <b>Delivery done in 3 days from date of purchase</b> </p>
+                    <p class="text-secondary">Order now to get this product delivery</p>
+                </div>
+                <div class="delivery-options my-4">
+                    <p class="font-weight-bold mb-0">
+                        <span><i class="fa-solid fa-filter"></i></span>
+                        <b>Delivery options</b> </p>
+                    <p class="text-secondary">Delivery options</p>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Relevant products -->
+
+    <div class="container similar-products my-4">
+        <hr>
+        <p class="display-5">Sản phẩm liên quan</p>
+
+        <div class="row mt-3 p-0 text-center pro-box-section">
+            <ul class="row mt-3 p-0 text-center pro-box-section list-unstyled justify-content-center">
+                @if (relevantProducts?.Count() > 0)
+                {
+                    @foreach (var product in relevantProducts)
+                    {
+                        @await Html.PartialAsync("PartialProductItem", product)
+                        ;
+
+                    }
+                    <li class="d-flex justify-content-center align-items-center mt-5">
+                        @Html.PagedListPager(relevantProducts, page => Url.Action("Details", "ProductDetail", new { page = page, id = ViewBag.ProductID }),
+                    new X.PagedList.Mvc.Core.PagedListRenderOptions()
+                    {
+                    LiElementClasses = new List<String> { "page-item" },
+                    PageClasses = new List<String> { "page-link" }
+                    }
+                    )
+                    </li>
+                }
+                else
+                {
+                    <li>Không có sản phẩm liên quan!</li>
+                }
+            </ul>
+        </div>
+    </div>
+
+    </div>
+</main>
+
+@section ProductDetailScripts{
+    <script>
+        $(document).ready(function(){
+
+            $(".thumbnail").click(function () {
+                $("#current-image").attr("src", $(this).attr("src"))
+            })
+        })
+
+    </script>
+}

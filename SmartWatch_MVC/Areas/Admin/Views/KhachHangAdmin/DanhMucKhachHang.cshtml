@@ -1,0 +1,160 @@
+﻿@*@model IEnumerable<SmartWatch_MVC.Models.TDanhMucSp>*@
+
+@{
+    ViewData["Title"] = "DanhMucKhachHang";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@using SmartWatch_MVC.Models;
+@using X.PagedList.Mvc.Core;
+@model X.PagedList.IPagedList<TKhachHang>
+
+<h2>Danh mục các khách hàng </h2>
+<hr />
+<div class="row">
+    <div class="d-flex justify-content-end">
+        <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0 justify-content-end">
+            <div class="input-group" style="text-align:center">
+                <input class="form-control" type="text" id="txtSearch" placeholder="Search for..." aria-label="Search for..." aria-describedby="btnNavbarSearch" />
+                <button class="btn btn-primary" id="btnNavbarSearch" type="button"><i class="mdi mdi-yeast"></i></button>
+            </div>
+        </form>
+    </div>
+</div>
+
+@*gán temdata vào danh mục sản phẩm*@
+<p>@TempData["Message"]</p>
+<div class="stretch-card">
+    <div class="card">
+        <div class="card-body" id="contentKH">
+            <table class="table table-bordered">
+                <thead class="table-warning">
+                    <tr>
+                        <th>
+                            @*@Html.DisplayNameFor(model => model.MaSp)*@
+                            <p>Mã khách hàng</p>
+                        </th>
+                        <th>
+                            <p>Tên khách hàng</p>
+                        </th>
+                        <th>
+                            <p>Ngày sinh</p>
+                        </th>
+                        <th>
+                            <p>
+                                Số điện thoại
+                            </p>
+                        </th>
+                        <th>
+                            <p>
+                                Địa chỉ
+                            </p>
+                        </th>
+                        <th>
+                            <p>
+                                Loại Khách Hàng
+                            </p>
+                        </th>
+
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @{
+                        int i = 0;
+                        string @color = "table-success";
+                    }
+                    @foreach (var item in Model)
+                    {
+                        i = i + 1;
+                        color = "table-success";
+
+                        if (i % 2 == 0)
+                        {
+                            color = "table-info";
+                        }
+                        <tr class="@color">
+                            <td>
+                                @Html.DisplayFor(modelItem => item.MaKhanhHang)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.TenKhachHang)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.NgaySinh)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.SoDienThoai)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.DiaChi)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.LoaiKhachHang)
+                            </td>
+                            <!--<td>
+                            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+
+                            </td>-->
+                        
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<div>
+    <ul class="pagination">
+        @for (int j = 1; j <= Model.PageCount; j++)
+        {
+            <li class="page-item @(j == Model.PageNumber ? "active" : "")"><a class="page-link" data-page="@j">@j</a></li>
+        }
+    </ul>
+</div>
+@section Scripts{
+    <script>
+
+        $(document).on("click", ".pagination a", function (e) {
+            console.log("runing")
+            e.preventDefault();
+
+            var page = $(this).data("page");
+            $(".pagination li").removeClass("active");
+            $(this).parent().addClass("active");
+            $.ajax({
+                url: "/admin/khachhangadmin/DanhMucKhachHangFs",
+                data: { page: page },
+                type: "GET",
+                success: function (response) {
+                    $("div#contentKH").html(response);
+                }
+            });
+        });
+
+        $("#btnNavbarSearch").click(function () {
+            var page = 1; // Reset to the first page when searching
+            var search = $("#txtSearch").val();
+
+            $.ajax({
+                url: "/admin/khachhangadmin/DanhMucKhachHangFs",
+                data: { page: page, search: search },
+                type: "GET",
+                success: function (response) {
+                    $("div#contentKH").html(response);
+                }
+            });
+        });
+    </script>
+}
+@*<div>
+    @Html.PagedListPager(Model, page => Url.Action("DanhMucKhachHang", new{page=page}), new
+    X.PagedList.Mvc.Core.PagedListRenderOptions(){
+    LiElementClasses = new List<String> {"page-item"},
+    PageClasses =new List<String> {"page-link"}
+    }
+    )
+</div>*@
+
+

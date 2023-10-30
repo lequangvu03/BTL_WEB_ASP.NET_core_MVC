@@ -1,0 +1,116 @@
+﻿@*@model IEnumerable<SmartWatch_MVC.Models.TDanhMucSp>*@
+
+@{
+    ViewData["Title"] = "DanhMucHoaDon";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+
+}
+
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@using SmartWatch_MVC.Models;
+@using X.PagedList.Mvc.Core;
+@model X.PagedList.IPagedList<THoaDonBan>
+<h2>Danh mục các Hóa đơn </h2>
+<hr />
+@*gán temdata vào danh mục sản phẩm*@
+<p>@TempData["Message"]</p>
+<div class="stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-bordered">
+                    <thead class="table-warning">
+                        <tr>
+                            <th>
+                                @*@Html.DisplayNameFor(model => model.MaSp)*@
+                                <p>Mã Hóa Đơn</p>
+                            </th>
+                            <th>
+                                <p>Ngày Hóa đơn</p>
+                            </th>
+                            <th>
+                                <p>Mã Khách Hàng</p>
+                            </th>
+                            <th>
+                                <p>Mã Nhân Viên</p>
+                            </th>                        
+                            <th>
+                                <p>
+                                  Mã Số Thuế
+                                </p>
+                            </th>
+                            <th>
+                                <p>
+                                    Tổng Hóa Đơn
+                                </p>
+                            </th>
+
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @{
+                            int i = 0;
+                            string @color = "table-success";
+                        }
+                        @foreach (var item in Model)
+                        {
+                            i = i + 1;
+                            color = "table-success";
+
+                            if (i % 2 == 0)
+                            {
+                                color = "table-info";
+                            }
+                            <tr class="@color">
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.MaHoaDon)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.NgayHoaDon)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.MaKhachHang)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.MaNhanVien)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.MaSoThue)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.TongTienHd)
+                                </td>
+                                <!--<td>
+                                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+
+                                </td>-->
+                                <td>
+                                    <div class="col-md-3">
+                                      
+                                        <a style="text-decoration: none;" asp-action="ChiTietHoaDon" asp-route-maHoaDon="@item.MaHoaDon">
+                                            <i class="mdi mdi-receipt"></i>
+                                        </a>
+                                   
+
+                                    </div>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div>
+    @Html.PagedListPager(Model, page => Url.Action("DanhMucHoaDon", new{page=page}), new
+    X.PagedList.Mvc.Core.PagedListRenderOptions(){
+    LiElementClasses = new List<String> {"page-item"},
+    PageClasses =new List<String> {"page-link"}
+    }
+    )
+</div>
+

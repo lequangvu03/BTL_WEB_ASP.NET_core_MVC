@@ -1,0 +1,78 @@
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@using X.PagedList.Mvc.Core;
+@model X.PagedList.IPagedList<SmartWatch_MVC.Models.TDanhMucSp>
+<table class="table table-bordered">
+    <thead class="table-warning">
+        <tr>
+            <th>
+                @*@Html.DisplayNameFor(model => model.MaSp)*@
+                <p>Mã sản phẩm</p>
+            </th>
+            <th>
+                <p>Tên sản phẩm</p>
+            </th>
+            <th>
+                <p>Thời gian bảo hành</p>
+            </th>
+            <th>
+                <p>Giá nhỏ nhất</p>
+            </th>
+            <th>
+                <p>Giá lớn nhất</p>
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @{
+            int i = 0;
+            string @color = "table-success";
+        }
+        @foreach (var item in Model)
+        {
+            i = i + 1;
+            color = "table-success";
+
+            if (i % 2 == 0)
+            {
+                color = "table-info";
+            }
+            <tr class="@color">
+                <td>
+                    @Html.DisplayFor(modelItem => item.MaSp)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TenSp)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ThoiGianBaoHanh)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.GiaNhoNhat)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.GiaLonNhat)
+                </td>
+                <!--<td>
+                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+                </td>-->
+                <td>
+                    <div class="col-md-3">
+                        <a style="text-decoration: none;" asp-action="SuaSanPham" asp-route-maSanPham="@item.MaSp">
+                            <i class="mdi mdi-rename-box"></i>
+                        </a>
+                        <a style="text-decoration: none;" asp-action="ChiTietSanPham" asp-route-maSanPham="@item.MaSp">
+                            <i class="mdi mdi-receipt"></i>
+                        </a>
+                        <a style="text-decoration: none;" asp-action="XoaSanPham" asp-route-maSanPham="@item.MaSp">
+                            <i class="mdi mdi-delete-forever"></i>
+                        </a>
+
+                    </div>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

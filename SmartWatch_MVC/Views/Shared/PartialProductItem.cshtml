@@ -1,0 +1,23 @@
+﻿@model TDanhMucSp
+
+<li class="col-lg-3 col-sm-5 px-2 my-2">
+    <div class="border p-4">
+        <a href="/ProductDetail/Details?id=@Model.MaSp" class="text-decoration-none text-black block">
+            <img src="~/images/ProductImg/@Model.AnhDaiDien" class="card-img-top" style="width: 214px; height: 214px; object-fit: cover;" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">@Model.TenSp</h5>
+                <div class="card-text d-flex gap-3 justify-content-center align-items-center">
+                    <div class="my-2">
+                        <span>Price: </span>
+                        <strong>@Model.GiaNhoNhat</strong>
+                    </div>
+                    <span class="text-decoration-line-through opacity-50">@Model.GiaLonNhat</span>
+
+                </div>
+                @* <button class="add-to-cart btn btn-primary mt-2" data-product-id="@Model.MaSp">Add to Cart</button> *@
+                <a class="btn btn-primary mt-2 text-white add-to-card" id="@Model.MaSp">Add to Cart</a>
+            </div>
+        </a>
+    </div>
+</li>
+
