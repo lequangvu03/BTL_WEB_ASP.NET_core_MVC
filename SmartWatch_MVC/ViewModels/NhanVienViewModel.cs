@@ -16,7 +16,7 @@ namespace SmartWatch_MVC.ViewModels {
         [Required(ErrorMessage = "Ngày sinh là trường bắt buộc.")]
         public DateTime? NgaySinh { get; set; }
 
-        [Required(ErrorMessage = "Số điện thoại là trường bắt buộc.")]
+       // [Required(ErrorMessage = "Số điện thoại là trường bắt buộc.")]
         public string? SoDienThoai { get; set; }
 
         [Required(ErrorMessage = "Địa chỉ là trường bắt buộc.")]
@@ -28,7 +28,7 @@ namespace SmartWatch_MVC.ViewModels {
         [Required(ErrorMessage = "Ảnh đại diện là trường bắt buộc.")]
         public IFormFile img { get; set; }
 
-        [Required(ErrorMessage = "Ghi chú là trường bắt buộc.")]
+     //   [Required(ErrorMessage = "Ghi chú là trường bắt buộc.")]
         public string? GhiChu { get; set; }
 
         [Required(ErrorMessage = "Giới tính là trường bắt buộc.")]

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "kJTVIPZQz4MR81FK3Faa8EWszlJIWG5f6cgXLG0VWeQ=",
+  "Hash": "yguAlkjPocbDXAmfd18FaI3KZ9XLHTuWu/Uf3VpuisU=",
   "Source": "SmartWatch_MVC",
   "BasePath": "_content/SmartWatch_MVC",
   "Mode": "Default",
@@ -984,6 +984,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\CategoryImg\\thongminh.webp"
+    },
+    {
+      "Identity": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\EmployeeImg\\NV_0.jpg",
+      "SourceId": "SmartWatch_MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\",
+      "BasePath": "_content/SmartWatch_MVC",
+      "RelativePath": "images/EmployeeImg/NV_0.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\EmployeeImg\\NV_0.jpg"
     },
     {
       "Identity": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\EmployeeImg\\NV_8.jpg",
@@ -3602,23 +3619,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\service\\service-8.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\SP_1.jpg",
-      "SourceId": "SmartWatch_MVC",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\",
-      "BasePath": "_content/SmartWatch_MVC",
-      "RelativePath": "images/SP_1.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\SP_1.jpg"
     },
     {
       "Identity": "C:\\Users\\Admin\\Downloads\\web\\BTL_WEB\\SmartWatch_MVC\\wwwroot\\images\\team\\1.jpg",
